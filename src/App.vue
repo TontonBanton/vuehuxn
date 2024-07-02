@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ParentComp/>
+  <InterComp/>
+  <AttributeComp/>
+  <DynamicComp/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ParentComp from './components/1Parent.vue'
+import InterComp from './components/2Interpolation.vue'
+import AttributeComp from './components/3AttributeBind'
+import DynamicComp from './components/4DynamicBind'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    ParentComp,InterComp, AttributeComp, DynamicComp
   }
 }
 </script>
@@ -23,4 +29,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
