@@ -5,6 +5,7 @@
   <DynamicComp/>
   <EventsComp/>
   <ReactiveComp/>
+  <RefComp/>
 </template>
 
 <script>
@@ -14,12 +15,13 @@ import AttributeComp from './components/3AttributeBind'
 import DynamicComp from './components/4DynamicBind'
 import EventsComp from './components/6Events'
 import ReactiveComp from './components/7Reactivity'
+import RefComp from './components/8Ref'
 
 export default {
   name: 'App',
 
   components: {
-    ParentComp,InterComp, AttributeComp, DynamicComp, EventsComp, ReactiveComp
+    ParentComp,InterComp, AttributeComp, DynamicComp, EventsComp, ReactiveComp, RefComp
   }
 }
 </script>
