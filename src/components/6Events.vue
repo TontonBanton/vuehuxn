@@ -1,5 +1,5 @@
 <template>
-  <h2>6. Event Handling v-on:</h2>
+  <h2>6. Event Handling v-on: @</h2>
   <div class="container">
     <button v-on:click="count++">Increment v-on:click</button>
     <button @:click="decrementCount">Decrement @click</button>

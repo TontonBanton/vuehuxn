@@ -5,7 +5,7 @@
     <h3>Times 2: {{ mulNumber }}</h3>
   </div>
   <div class="row">
-    <h3>FullName: {{ fullName }}</h3>
+    <h3>Name: {{ fullName }}</h3>
   </div>
   <div class="row">
     <h3>Original: {{ counter}}</h3>
@@ -37,4 +37,7 @@ const squareCounter = computed(() => counter.value * 2 )
 </script>
 
 <style scoped>
+h3{
+  width: 7rem;
+}
 </style>

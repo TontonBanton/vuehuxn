@@ -7,9 +7,11 @@
   <ReactiveComp/>
   <RefComp/>
   <ComputedComp/>
+  <ConditionComp/>
+  <IterateComp/>
 </template>
 
-<script>
+<script setup>
 import ParentComp from './components/1Parent'
 import InterComp from './components/2Interpolation'
 import AttributeComp from './components/3AttributeBind'
@@ -18,14 +20,8 @@ import EventsComp from './components/6Events'
 import ReactiveComp from './components/7Reactivity'
 import RefComp from './components/8Ref'
 import ComputedComp from './components/9Computed'
-
-export default {
-  name: 'App',
-
-  components: {
-    ParentComp,InterComp, AttributeComp, DynamicComp, EventsComp, ReactiveComp, RefComp, ComputedComp
-  }
-}
+import ConditionComp from './components/10ConditionRender'
+import IterateComp from './components/11IterateArray'
 </script>
 
 <style>
@@ -37,5 +33,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
 </style>

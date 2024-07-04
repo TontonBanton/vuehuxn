@@ -1,5 +1,5 @@
 <template>
-  <h2>7. Reactive Statue (Object) </h2>
+  <h2>7. Reactive State (Object) </h2>
   <div class="row">
     <h3>Count Reactive: {{ reactiveState.count }}</h3>
     <button @click="reactiveState.count++">+</button>

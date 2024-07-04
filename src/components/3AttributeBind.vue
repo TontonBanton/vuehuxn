@@ -1,5 +1,5 @@
 <template>
-  <h2>3. Attribute Bindings :attr</h2>
+  <h2>3. Attribute Bindings v-bind :attr</h2>
   <a v-bind:href="tutorialChannel">Tutorial Link (Old Style v-bind:attr) </a>
   <a :href="tutorialChannel">Tutorial Link (New :attr)</a>
   <img :src="googlePhotosImage" :alt="altText" :height="imgHeight" :width="imgWidth">
