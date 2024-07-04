@@ -5,22 +5,13 @@
   <p> Add(params) from method  {{ add(3,10) }}</p>
 </template>
 
-<script>
+<script setup>
+  const myMessage = "Sample"
+  const myNumber = 2
 
-export default {
-  name: 'InterComp',
-  data() {
-    return {
-      myMessage: "Sample",
-      myNumber: 2
-    }
-  },
-  methods: {
-    add(x,y) {
+  function add(x,y) {
       return x + y
-    }
   }
-}
 </script>
 
 <style scoped>

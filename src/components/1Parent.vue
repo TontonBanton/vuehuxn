@@ -3,14 +3,8 @@
   <ChildCom/>
 </template>
 
-<script>
+<script setup>
 import ChildCom from './1ParentChild.vue'
-export default{
-  name: 'ParentCom',
-  components: {
-    ChildCom
-  }
-}
 </script>
 
 <style scoped>

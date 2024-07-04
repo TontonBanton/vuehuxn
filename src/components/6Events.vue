@@ -2,39 +2,28 @@
   <h2>6. Event Handling v-on:</h2>
   <div class="container">
     <button v-on:click="count++">Increment v-on:click</button>
-    <button @:click="decrementCount">Decrement Method @click</button>
+    <button @:click="decrementCount">Decrement @click</button>
     <h3> Count: {{ count }}</h3>
   </div>
   <form @:submit="submitHandler">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Name"><input type="text" placeholder="Email">
     <button type="submit">Submit</button>
   </form>
   <button class="butParam" @:click="showMessage('Param from button template')">Pass Parameter</button>
 </template>
 
-<script>
-export default{
-  name: 'EventsComp',
-  data() {
-    return{ count: 0}
-  },
+<script setup>
+import { ref } from 'vue'
+  const count = ref(0)
+  const decrementCount = () => count.value--
 
-  //METHODS
-  methods: {
-    decrementCount() {
-      this.count--
-    },
-    submitHandler(e) {
-      e.preventDefault()  // Prevents the default form submission behavior ex. reload page, send to server, etc.
-      alert('Form Test Handler')
-    },
-    showMessage(message){
-      alert(message)
-    }
+  function submitHandler(e) {
+    e.preventDefault()  // Prevents the default form submission behavior ex. reload page, send to server, etc.
+    alert('Form Test Handler')
   }
-
-}
+  function showMessage(message){
+    alert(message)
+  }
 </script>
 
 <style scoped>

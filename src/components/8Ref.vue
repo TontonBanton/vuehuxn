@@ -1,5 +1,5 @@
 <template>
-  <h2>8. Ref (for primitive value) </h2>
+  <h2>8. Ref State (Primitive Data)</h2>
   <div class="row">
     <h3>Number Ref: {{ refNum }}</h3>
     <button @click="refNum++">+</button>
@@ -27,34 +27,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default{
-  name:'RefComp',
-  data() {
-    return{
-      refNum: ref(0),
-      refString: ref(''),
-      refArray: ref(['User1', 'User2']),
-      userInfo:ref({ name:'Juan', age:13, location:['Ulas', 'Pangi'], isMarried: false })
-    }
-  }
-}
+  let refNum = ref(0)
+  let refString =  ref('')
+  let refArray = ref(['User1', 'User2'])
+  let userInfo = ref({ name:'Juan', age:13, location:['Ulas', 'Pangi'], isMarried: false })
 </script>
 
 <style scoped>
-.row {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;          /* Align items vertically in the center */
-  justify-content: flex-start;  /* Start from the left */
-}
-.row h3 {
-  padding: 0;
-  font-size: 1rem;
-  width: 250px;
-}
-.row button {
-  width: 150px;
-}
 </style>

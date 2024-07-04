@@ -6,6 +6,7 @@
   <EventsComp/>
   <ReactiveComp/>
   <RefComp/>
+  <ComputedComp/>
 </template>
 
 <script>
@@ -16,12 +17,13 @@ import DynamicComp from './components/4DynamicBind'
 import EventsComp from './components/6Events'
 import ReactiveComp from './components/7Reactivity'
 import RefComp from './components/8Ref'
+import ComputedComp from './components/9Computed'
 
 export default {
   name: 'App',
 
   components: {
-    ParentComp,InterComp, AttributeComp, DynamicComp, EventsComp, ReactiveComp, RefComp
+    ParentComp,InterComp, AttributeComp, DynamicComp, EventsComp, ReactiveComp, RefComp, ComputedComp
   }
 }
 </script>
