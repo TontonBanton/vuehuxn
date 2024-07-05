@@ -9,6 +9,7 @@
   <ComputedComp/>
   <ConditionComp/>
   <IterateComp/>
+  <ConnectComp/>
 </template>
 
 <script setup>
@@ -22,6 +23,7 @@ import RefComp from './components/8Ref'
 import ComputedComp from './components/9Computed'
 import ConditionComp from './components/10ConditionRender'
 import IterateComp from './components/11IterateArray'
+import ConnectComp from './components/12TwoWayBind'
 </script>
 
 <style>
