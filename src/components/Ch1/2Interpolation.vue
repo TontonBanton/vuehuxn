@@ -3,6 +3,7 @@
   <p> myMessage: {{ myMessage }}, myNumber: {{ myNumber }} </p>
   <p> 2 + 2= {{ 2 + 2 }} </p>
   <p> Add(params) from method  {{ add(3,10) }}</p>
+  <hr>
 </template>
 
 <script setup>

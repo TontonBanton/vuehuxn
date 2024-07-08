@@ -1,5 +1,5 @@
 <template>
-  <h2>1. Properties (props)</h2>
+  <h2>1. Properties (props) - Parent -> Child</h2>
 
   <StaticChild parentName="Juan"/>
   <DynamicChild :firstName="firstName" :lastName="lastName"/>

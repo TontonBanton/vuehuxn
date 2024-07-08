@@ -25,6 +25,7 @@
     <button @click="userInfo.location = ['change', 'change']">Change Location</button>
     <button @click="userInfo.isMarried = true">Change Status</button>
   </div>
+  <hr>
 </template>
 
 <script setup>

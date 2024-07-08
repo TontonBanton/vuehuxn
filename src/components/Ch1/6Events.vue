@@ -10,6 +10,7 @@
     <button type="submit">Submit</button>
   </form>
   <button class="butParam" @:click="showMessage('Param from button template')">Pass Parameter</button>
+  <hr>
 </template>
 
 <script setup>

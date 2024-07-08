@@ -14,7 +14,7 @@
     <button @click="changeUser">Change User Property</button>
     <button @click="addUser">Add User Propert</button>
   </div>
-
+  <hr>
 </template>
 
 <script setup>

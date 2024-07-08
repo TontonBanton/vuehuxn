@@ -25,8 +25,7 @@
   <h3 v-for="(value, keys, index) in games" :key="index">
     {{ index }} - {{ keys }} - {{ value }}
   </h3>
-
-
+  <hr>
 </template>
 
 <script setup>

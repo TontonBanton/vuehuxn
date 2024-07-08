@@ -12,6 +12,7 @@
     <h3>Squared: {{ squareCounter }}</h3>
     <button @click="incrementCount">Increment</button>
   </div>
+  <hr>
 </template>
 
 <script setup>

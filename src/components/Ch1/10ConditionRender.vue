@@ -20,6 +20,7 @@
     <h3 v-else-if="password.length < 8">Weak Password</h3>
     <h3 v-else>Please Enter Password</h3>
   </div>
+  <hr>
 </template>
 
 <script setup>

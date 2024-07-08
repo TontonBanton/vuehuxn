@@ -18,6 +18,8 @@
   </div>
   <div v-if="showChapter === 2">
     <PropParentComp/>
+    <ComponentEvent/>
+    <SlotComp/>
   </div>
 
 </template>
@@ -36,7 +38,8 @@ import ConditionComp from './components/Ch1/10ConditionRender'
 import IterateComp from './components/Ch1/11IterateArray'
 import ConnectComp from './components/Ch1/12TwoWayBind'
 import PropParentComp from './components/Ch2/1APropsParent'
-
+import ComponentEvent from './components/Ch2/2AComponentEvent'
+import SlotComp from './components/Ch2/3ASlotComponent'
 
 const showChapter = ref(0) //default value
 </script>
