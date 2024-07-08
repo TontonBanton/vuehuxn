@@ -1,5 +1,6 @@
 <template>
   <h2>1. Properties (props)</h2>
+
   <StaticChild parentName="Juan"/>
   <DynamicChild :firstName="firstName" :lastName="lastName"/>
   <ChangingProps :varNum="varNum" />
@@ -8,7 +9,8 @@
   <ComplexProps
     :users="['User1','User2','User3']"
     :userInfo="{ name: 'Juan Tamad', age: 69, location: ['Boulevard', 'Achup']}"
-    />
+  />
+  <CustomValidation name="User1" age="45" password="12345"/>
 
 </template>
 
@@ -19,6 +21,7 @@ import DynamicChild from './1CDynamicChild'
 import ChangingProps from './1DChangingProps'
 import PropsValidation from './1EPropsValidation'
 import ComplexProps from './1FComplexProps'
+import CustomValidation from './1GCustomValidation'
 
   const firstName = ref('Juan')
   const lastName = ref('Wick')
@@ -33,4 +36,7 @@ h2, h3 {
 </style>
 
 <style scoped>
+h2{
+  margin-left: 0px;
+}
 </style>

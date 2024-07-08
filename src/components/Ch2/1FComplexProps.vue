@@ -4,7 +4,7 @@
   <h3>{{ userInfo }}</h3>
 
   <ul v-for="(name, i) in users" :key="i" >
-    <li>{{ name }}</li>
+    <li margin="0">{{ name }}</li>
   </ul>
 </template>
 
@@ -17,7 +17,11 @@ defineProps({
 </script>
 
 <style scoped>
-li{
+ul{
+  margin: 0px;
+}
+li {
+  margin: 0px;
   font-size: .8rem;
   text-align: left;
 }

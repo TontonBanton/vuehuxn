@@ -35,9 +35,6 @@ h3, p, a{
   padding-left: 20px;
   text-align: left;
 }
-p {
-  color: rgb(140, 168, 16);
-}
 .globaled {
   color: rgb(99, 10, 10);
 }
