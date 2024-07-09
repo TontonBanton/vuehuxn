@@ -1,12 +1,11 @@
 <template>
-  <h2>2. Component Event - Child $emit() -> Parent </h2>
+  <h2>2. Event $emit() - Child->Parent </h2>
 
   <h2>Parent Count: {{ count }}</h2>
   <ChildComponent
     @incrementCounter="count++"
     @userInfo="formHandler"
   />
-  <hr>
 </template>
 
 <script setup>

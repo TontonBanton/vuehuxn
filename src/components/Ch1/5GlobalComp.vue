@@ -4,7 +4,6 @@
   <h3 class="scoped">For Scope</h3>
   <h3 :class="$style['kebab-style']">Using Style Module w/ kebab-case syntax</h3>
   <h3 :class="$style.camelCaseStyle">Using Style Module w/ camelCase syntax</h3>
-  <hr>
 </template>
 
 <script setup>

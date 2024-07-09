@@ -3,7 +3,6 @@
   <h3>{{ name }}</h3>
   <h3>{{ age }}</h3>
   <h3>{{ password }}</h3>
-  <hr>
 </template>
 
 <script setup>
