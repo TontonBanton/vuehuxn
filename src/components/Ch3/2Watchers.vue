@@ -1,14 +1,18 @@
 <template>
-  <h2>2. Watchers </h2>
+  <h2>2. Watchers (Data, Object Changes) </h2>
+
   <div class="row">
     <h3>Input Text: {{ message }}</h3>
     <input type="text" v-model="inputTxt" style="width: 9rem;">
   </div>
+
+   <!--Object Watch-->
   <div class="row">
     <h3>Object userName: {{ state.userName }}</h3>
     <button @click="state.userName = 'User2'">Change Object Name</button>
   </div>
 
+  <!--Multiple Data Watch-->
   <h3>Default: {{ defaultTxt }}</h3>
   <h3>Counter   : {{ counter }}</h3>
   <div class="row">
@@ -43,7 +47,7 @@ watch(
   }
 )
 
-//Watcher Multiple Data (Reactive)
+//Watcher Multiple Data
 watch([defaultTxt, counter], (newValue, oldvalue) =>{
   console.log("Old: " + oldvalue)
   console.log("New: " + newValue)

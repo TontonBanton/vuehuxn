@@ -1,5 +1,5 @@
 <template>
-  <h2>Dynamic Props Child</h2>
+  <h2>Dynamic Props Parent->Child</h2>
   <h3>{{ props.firstName }}</h3>
   <h3>{{ props.lastName }}</h3>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <h2>Static Props Child</h2>
+  <h2>Static Props Parent->Child</h2>
   <h3>{{ props }}</h3>
   <h3>{{ props.parentName }}</h3>
 </template>
