@@ -17,11 +17,14 @@ import { ref } from 'vue'
   const count = ref(0)
   const decrementCount = () => count.value--
 
+  //Traditional JS Syntax
   function submitHandler(e) {
-    e.preventDefault()  // Prevents the default form submission behavior ex. reload page, send to server, etc.
+    e.preventDefault()          // Prevents the default form behavior ex. reload page, send to server, etc.
     alert('Form Test Handler')
   }
-  function showMessage(message){
+
+  //ES6 Arrow function Syntax
+  const showMessage= (message) => {
     alert(message)
   }
 </script>

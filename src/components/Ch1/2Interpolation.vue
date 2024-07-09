@@ -9,6 +9,7 @@
   const myMessage = "Sample"
   const myNumber = 2
 
+  //Tradion function syntax
   function add(x,y) {
       return x + y
   }

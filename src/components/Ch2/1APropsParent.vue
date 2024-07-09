@@ -4,13 +4,13 @@
   <StaticChild parentName="Juan"/>
   <DynamicChild :firstName="firstName" :lastName="lastName"/>
   <ChangingProps :varNum="varNum" />
-  <PropsValidation fullName="JohnWick" age="30"/>
+  <PropsValidation fullName="JohnWick" :age="30"/>
 
   <ComplexProps
     :users="['User1','User2','User3']"
     :userInfo="{ name: 'Juan Tamad', age: 69, location: ['Boulevard', 'Achup']}"
   />
-  <CustomValidation name="User1" age="45" password="12345"/>
+  <CustomValidation name="User1" :age="45" password="12345"/>
 
 </template>
 

@@ -25,6 +25,7 @@
   </div>
   <div v-if="showChapter === 3">
     <LifeCycleComp/><hr>
+    <WatchersComp/><hr>
   </div>
 
 </template>
@@ -47,6 +48,7 @@ import ComponentEvent from './components/Ch2/2AComponentEvent'
 import SlotComp from './components/Ch2/3ASlotComponent'
 import ProvideInjectComp from './components/Ch2/4AProvideInject'
 import LifeCycleComp from './components/Ch3/1LifeCycleHooks'
+import WatchersComp from './components/Ch3/2AWatchers'
 
 const showChapter = ref(0) //default value
 </script>
