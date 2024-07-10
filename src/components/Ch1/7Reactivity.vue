@@ -2,8 +2,8 @@
   <h2>7. Reactive State (Object) </h2>
   <div class="row">
     <h3>Count Reactive: {{ reactiveState.count }}</h3>
-    <button @click="reactiveState.count++">+</button>
-    <button @click="reactiveState.count--">-</button>
+    <button @click="reactiveState.count++">Increment</button>
+    <button @click="reactiveState.count--">Decrement</button>
   </div>
   <div class="row">
     <h3> Current Count: {{ initialState.val.count }}</h3>

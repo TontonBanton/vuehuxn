@@ -1,9 +1,9 @@
 <template>
   <h2>6. Event Handling v-on: @</h2>
+  <h3> Count: {{ count }}</h3>
   <div class="container">
     <button v-on:click="count++">Increment v-on:click</button>
     <button @:click="decrementCount">Decrement @click</button>
-    <h3> Count: {{ count }}</h3>
   </div>
   <form @:submit="submitHandler">
     <input type="text" placeholder="Name"><input type="text" placeholder="Email">

@@ -1,5 +1,5 @@
 <template>
-  <h2>Template Ref (Direct Reference on DOM)</h2>
+  <h2>3. Template Ref (Direct Reference on DOM)</h2>
   <input type="text" ref="myRef" class="row">
   <h3 :ref="myRefFunc">Header Default Text</h3>
 

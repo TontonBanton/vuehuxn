@@ -1,5 +1,5 @@
 <template>
-  <img @click="showChapter = 0" src="./assets/logo.png" alt="" width="100rem"><br>
+  <img @click="showChapter = 0" src="./assets/logo.png" alt="" width="80rem"><br>
   <button @click="showChapter = 1">Show Chapter 1</button>
   <button @click="showChapter = 2">Show Chapter 2</button>
   <button @click="showChapter = 3">Show Chapter 3</button>
@@ -29,6 +29,8 @@
     <TemplateRefComp/><hr>
     <AsyncComp/><hr>
     <ComposableComp/><hr>
+    <DirectivesComp/><hr>
+    <DynamicMainComp/><hr>
   </div>
 
 </template>
@@ -55,6 +57,8 @@ import WatchersComp from './components/Ch3/2Watchers'
 import TemplateRefComp from './components/Ch3/3ATemplateRef'
 import AsyncComp from './components/Ch3/4AAsyncMain'
 import ComposableComp from './components/Ch3/5Composable'
+import DirectivesComp from './components/Ch3/6Directives'
+import DynamicMainComp from './components/Ch3/7ADynamicComp'
 
 const showChapter = ref(0) //default value
 </script>
@@ -66,7 +70,7 @@ const showChapter = ref(0) //default value
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
 

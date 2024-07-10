@@ -1,5 +1,5 @@
 <template>
-  <h2>3. Slot Components (Parent-Child DOM Elements)</h2>
+  <h2>3. Slot Components( Parent-Child DOM Elements) v-slot</h2>
   <SlotComp>
     <h3>Header From Parent->Child</h3>
   </SlotComp>
