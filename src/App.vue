@@ -27,6 +27,8 @@
     <LifeCycleComp/><hr>
     <WatchersComp/><hr>
     <TemplateRefComp/><hr>
+    <AsyncComp/><hr>
+    <ComposableComp/><hr>
   </div>
 
 </template>
@@ -51,6 +53,8 @@ import ProvideInjectComp from './components/Ch2/4AProvideInject'
 import LifeCycleComp from './components/Ch3/1LifeCycleHooks'
 import WatchersComp from './components/Ch3/2Watchers'
 import TemplateRefComp from './components/Ch3/3ATemplateRef'
+import AsyncComp from './components/Ch3/4AAsyncMain'
+import ComposableComp from './components/Ch3/5Composable'
 
 const showChapter = ref(0) //default value
 </script>

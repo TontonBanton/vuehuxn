@@ -13,7 +13,7 @@ const count = ref(0)
 const increment = () => count.value++
 const decrement = () => count.value--
 
-defineExpose({ count, increment, decrement})  //Pass this ref on parent
+defineExpose({ count, increment, decrement})  //Pass values on parent
 </script>
 
 <style scoped>

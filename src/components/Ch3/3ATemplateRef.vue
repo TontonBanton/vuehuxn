@@ -7,22 +7,16 @@
 </template>
 
 <script setup>
-import ChildComp from './3BChildCompRef'
 import { ref, onMounted } from 'vue';
-const myRef = ref('Default')
-const myCompRef = ref(null)
 
+const myRef = ref('Default')
 console.log('Before Mount: ', myRef.value)
-//MOUNTED
 onMounted(() =>{
-  //Element Ref
   console.log('On mounted: ', myRef.value)
   myRef.value.focus()
   myRef.value.value = 'Sample Text'
-
-  //Component Ref
-  console.log(myCompRef.value)
 })
+
 
 //Function Ref
 const myRefFunc = (domElem) => {
@@ -31,6 +25,12 @@ const myRefFunc = (domElem) => {
   domElem.style.color = 'red'
 }
 
+//Component Ref
+import ChildComp from './3BChildCompRef'
+const myCompRef = ref(null)
+onMounted(() =>{
+  console.log(myCompRef.value)
+})
 </script>
 
 <style scoped>
