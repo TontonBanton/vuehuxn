@@ -31,6 +31,8 @@
     <ComposableComp/><hr>
     <DirectivesComp/><hr>
     <DynamicMainComp/><hr>
+    <FetchComp/><hr>
+    <AxiosComp/><hr>
   </div>
 
 </template>
@@ -59,6 +61,9 @@ import AsyncComp from './components/Ch3/4AAsyncMain'
 import ComposableComp from './components/Ch3/5Composable'
 import DirectivesComp from './components/Ch3/6Directives'
 import DynamicMainComp from './components/Ch3/7ADynamicComp'
+import FetchComp from './components/Ch3/8AFetchData'
+import AxiosComp from './components/Ch3/8BAxiosData'
+
 
 const showChapter = ref(0) //default value
 </script>
